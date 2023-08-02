@@ -121,7 +121,7 @@
 ![enter image description here](https://cdn.discordapp.com/attachments/1026853768505081868/1136316668583362671/2023-08-02_221604.png)
     
     python manage.py runserver
-**🟡 สั่ง run server เพื่อใช้งานโดย**
+**🟡 สั่ง run server เพื่อใช้งาน**
 
 ![enter image description here](https://cdn.discordapp.com/attachments/1026853768505081868/1136315785229373550/2023-08-02_221228.png)
 
