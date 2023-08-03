@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 <!---->
 {% block title %}
-    หน้าเเรกของฉัน
+    ข้อมูลนักศึกษา
 {% endblock title %}
 <!---->
 {% block Content %}
@@ -19,8 +19,8 @@
       
       {% for student in students %}
       <tr>
-        <th scope="row">1</th>
-        <td><a href="{% url 'details' student.id %}"> {{ student.std_id }}</a></td>
+        <th scope="row">0</th>
+        <td>{{ student.std_id }}</td>
         <td>{{ student.prefix }}</td>
         <td>{{ student.name }}</td>
         <td>{{ student.lastname }}</td>
