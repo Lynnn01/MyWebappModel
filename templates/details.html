@@ -9,28 +9,42 @@
 <table class="table">
     <thead>
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">ID</th>
-        <th scope="col">PREFIX</th>
-        <th scope="col">NAME</th>
-        <th scope="col">LASTNAME</th>
-        <th scope="col">PHONE</th>
-      </tr>
-      
-      {% for student in students %}
-      <tr>
-        <th scope="row">0</th>
+        <td scope="col">ID</td>
         <td>{{ student.std_id }}</td>
-        <td>{{ student.prefix }}</td>
-        <td>{{ student.name }}</td>
-        <td>{{ student.lastname }}</td>
-        <td>{{ student.phone }}</td>
       </tr>
-      {% endfor %}
+      <tr>
+        <td scope="col">PREFIX</td>
+        <td>{{ student.prefix_str }}</td>
+      </tr>
+      <tr>
+        <td scope="col">NAME</td>
+        <td>{{ student.name }}</td>
+      </tr>
+      <tr>
+        <td scope="col">LASTNAME</td>
+        <td>{{ student.lastname }}</td>
+      </tr>
+      <tr>
+        <td scope="col">PHONE</td>
+        <td>{{ student.phone }}</td>
 
     </thead>
     <tbody>
       
     </tbody>
   </table>
+
+<div class="row row-cols-1 m-auto">
+  <div class="col">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fvectors%2Fblank-profile-picture-mystery-man-973460%2F&psig=AOvVaw2k4d7977M4rITFId_z0EvH&ust=1691130993286000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMjluILwv4ADFQAAAAAdAAAAABAE" alt="" srcset="">
+  </div>
+  <div class="col">
+    <div class="row row-cols-2">
+      <div class="col">{{ student.stu_id }}</div>
+    </div>
+  </div>
+
+</div>
+
+  
 {% endblock Content %}

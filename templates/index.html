@@ -19,9 +19,9 @@
       
       {% for student in students %}
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">{{ student.id }}</th>
         <td><a href="{% url 'details' student.id %}"> {{ student.std_id }}</a></td>
-        <td>{{ student.prefix }}</td>
+        <td>{{ student.prefix_str }}</td>
         <td>{{ student.name }}</td>
         <td>{{ student.lastname }}</td>
         <td>{{ student.phone }}</td>
