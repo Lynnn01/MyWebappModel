@@ -199,7 +199,7 @@ class Major(models.Model):
 ```
 >**🔺 Clss Major ใช้สำหรับเก็บข้อมูลคณะของนักศึกษา**
 
-## 📕7. [urls.py](https://github.com/Lynnn01/MyWebappModel/blob/main/MainApp/urls.py)
+## 📕8. [urls.py](https://github.com/Lynnn01/MyWebappModel/blob/main/MainApp/urls.py)
 
 ```py
 from django.urls import path
@@ -212,7 +212,7 @@ urlpatterns = [
 ]
 ```
 >**🔺 กำหนด path ของการเรียกใช้งานในแต่ละ page ซึ่งจะมีการดึงข้อมูลทั้งหมดจาก functions ใน [views.py](https://github.com/Lynnn01/MyWebappModel/blob/main/MainApp/views.py) มาใช้งาน และแสดงออกมาทางหน้าจอ**
-## 📕8. [admin.py](https://github.com/Lynnn01/MyWebappModel/blob/main/MainApp/admin.py)
+## 📕9. [admin.py](https://github.com/Lynnn01/MyWebappModel/blob/main/MainApp/admin.py)
 
 ```py
 from django.contrib import admin
@@ -239,7 +239,7 @@ python manage.py createsuperuser
 >**🔺 ใช้คำสั่ง makemigrations และ migrate เพื่อสร้างฐานข้อมูล แล้วจึงใช้คำสั่ง  createsuperuser เพื่อสร้าง admin user ในการเข้าถึงฐานข้อมูล**
 >
 >**❗️ หลังจากการสร้าง หรือปรับเปลี่ยนตารางสำหรับการเก็บข้อมูลใหม่ทุกครั้งๆ จำเป็นจะต้องใช้คำสั่งดังกล่าวเพื่อสร้างฐานข้อมูลใหม่ด้วยเช่นกัน**
-## 📕9. การสั่ง Run server
+## 📕10. การสั่ง Run server
 ![enter image description here](https://cdn.discordapp.com/attachments/1026853768505081868/1136316668583362671/2023-08-02_221604.png)
 
 ```sh
