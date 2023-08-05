@@ -7,7 +7,7 @@ from .models import Student, Major
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
     list_display = ("std_id", "prefix", "name", "lastname", "phone", "major")
-    search_fields = ("std_id", "name", "lastname", "phone")
+    search_fields = list_display
 
 
 @admin.register(Major)
